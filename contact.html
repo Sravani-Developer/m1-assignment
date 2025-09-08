@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Happy Paws</title>
+</head>
+<body>
+
+  <!-- Simple site nav linking all three pages -->
+  <p>
+    <a href="index.html">Home</a> |
+    <a href="adopt.html">Available Pets & Fees</a> |
+    <a href="contact.html">Contact</a>
+  </p>
+
+  <h1>Contact Happy Paws</h1>
+
+  <p>Use the form below to ask a question about adoption, volunteering, or donations.</p>
+
+  <form action="#" method="post">
+    <p>
+      <label>Full Name:
+        <input type="text" name="fullName" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Email:
+        <input type="email" name="email" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Topic:
+        <select name="topic" required>
+          <option value="" selected>Choose one</option>
+          <option value="adoption">Adoption</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="donation">Donation</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+    </p>
+
+    <p>
+      <label>Message:<br>
+        <textarea name="message" rows="6" cols="40" required></textarea>
+      </label>
+    </p>
+
+    <p>
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+    </p>
+  </form>
+
+</body>
+</html>
