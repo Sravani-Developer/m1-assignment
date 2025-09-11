@@ -77,4 +77,57 @@ nav a:hover{
   background:#e0e7ff; color:var(--brand-dark); transform:translateY(-1px);
 }
 nav a:focus{ outline:2px solid var(--brand); outline-offset:2px; }
+ul, ol{ margin: 0 0 14px 22px; }
+li{ margin: 6px 0; }
+ul > li::marker{ color: var(--brand); }
+ol > li::marker{ color: var(--accent); font-weight: bold; }
+
+a{ color: var(--brand); text-decoration: none; }
+a:hover, a:focus{ text-decoration: underline; }
+a:visited{ color: #5a4bd8; }
+
+img{ max-width:100%; height:auto; display:block; }
+figure{ margin: 12px 0; }
+figure img{
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+figcaption{ color: var(--muted); font-size: .9rem; margin-top: 6px; text-align: center; }
+
+main > section, main > article{
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+
+button,
+input[type="submit"],
+input[type="button"]{
+  display:inline-block;
+  padding:10px 16px;
+  border:1px solid var(--brand);
+  background: var(--brand);
+  color:#fff;
+  border-radius:8px;
+  cursor:pointer;
+  transition: background .15s ease, border-color .15s ease, transform .1s ease;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover{
+  background: var(--brand-dark);
+  border-color: var(--brand-dark);
+  transform: translateY(-1px);
+}
+button.secondary{
+  background:#eef2ff; color:var(--accent); border-color:#cdd9ff;
+}
+
+.center{ text-align:center; }
+.muted{ color: var(--muted); }
+
 
